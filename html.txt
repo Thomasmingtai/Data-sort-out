@@ -4,13 +4,16 @@
 <br> 跳下一行
 <hr> 印出一條線
 
+
 列表
 <ul> 建立一列表
 <li> 列表中的子項
 
+
 圖片
 <img src="路徑" alt="">
 <source srcset="路徑" media="(max-width: ...px)"> 於不同寬度大小的裝置上切換圖片
+
 
 超連結
 <a href="#id"> 網頁內連結
@@ -18,6 +21,7 @@
 <a href="網址"> 外部網站連結
 <a href="網址" target="_blank"> 以新分頁的方式開啟超連結
 <a href="路徑/網址" target="name"> 將路徑丟到該name的內嵌框架 
+
 
 容器
 <div>
@@ -29,11 +33,13 @@
 <video> 專門放置影片，可包含<source>，可加上'controls=""'參數，以增加控制鍵
 <audio> 專門放置音訊，可包含<source>，可加上'controls=""'參數，以增加控制鍵
 
+
 表格
 <table>
 <thead> 表格標題
 <td> 表格欄位
 <tfoot> 表格後標
+
 
 表單
 <form> 表單容器
@@ -45,19 +51,30 @@
 <input type="radio" name="name" value="1">text 用於複數選項單選按鈕，會顯示後面之文字，使用時name需相同，送出後傳送value之數值
 <input type="checkbox" name="name" value="1">text 用於複數選項複選按鈕，會顯示後面之文字，使用時name需相同，送出後傳送value之數值
 <input type="range" name="name" min="min_num" max="max_num" step="step_num"> 拉桿，拖動調整值，以max、min設定最大最小值，可以step設定解析度
+
+<input list="lis" name="name"> 配合<datalist>功能做使用，可自由輸入的同時出現推薦輸入
+<datalist id='name'> 配合list做使用，id名稱需與list之name相同，內部<option>不須與</option>成對
+<option value="text"> value內部之文字即為顯示之推薦輸入值 
+
 <select name="name"> 下拉式選單，內部包含<option>，送出後傳送<option>value之數值
 <optgroup label='text'> 將<option>分組，顯示為'text'
 <option value="1" selected>text</option> 選項顯示'text'，可以selected屬性設定預設值
 <option value="0" disabled selected> 禁止選擇之選項，常用於標示
 
+<progress id="id" name='name' value='value' min='min' max='max'></progress> 進度指示元素，以max、min設定最大最小值，value值為進度
 
-
+<textarea cols="寬度" rows="高度" name="name"></textarea> 文字輸入區塊，可輸入多行
 
 <input type="submit" value="SEND">送出資料之按鈕            
 <input type="reset" value="RESET">重設資料之按鈕
 
+
+按鈕
+<button onclick="動作">text</button> 可執行動作，文字顯示為text
+
 內嵌框架
 <iframe src="初始網址" name="name"></iframe> 可於網頁中開啟不同網頁，預設為初始網址，亦可開啟youtube
+
 
 資源
 <source src="檔名.mp4"  type="video/mp4"> 開啟mp4檔
